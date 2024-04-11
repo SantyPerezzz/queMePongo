@@ -1,9 +1,7 @@
 package queMePongo;
 
-import lombok.AllArgsConstructor;
 import lombok.Getter;
 
-@AllArgsConstructor
 @Getter
 
 public class Prenda {
@@ -11,5 +9,19 @@ public class Prenda {
     private Material material;
     private Color color1;
     private Color color2;
+
+    public Prenda(TipoPrenda tipo,Material material, Color colorPrincipal){
+        this.tipo=tipo;
+        this.material=material;
+        this.color1=colorPrincipal;
+        this.color2 = null;
+    }
+
+    public Prenda(TipoPrenda tipo,Material material, Color colorPrincipal, Color colorSecundario){
+        this.tipo=tipo;
+        this.material=material;
+        this.color1=colorPrincipal;
+        this.color2=colorSecundario;
+    }
 
 }

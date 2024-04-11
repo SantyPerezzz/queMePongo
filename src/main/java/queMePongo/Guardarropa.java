@@ -25,8 +25,6 @@ public class Guardarropa {
             case ACCESORIO:
                 prendas.add(new Accesorio(tipo,material,color1,color2));
                 break;
-            default:
-                System.out.println("Escoja un tipo valido de prenda");
         }
     }
 }
