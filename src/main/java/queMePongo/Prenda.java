@@ -9,7 +9,7 @@ import lombok.Setter;
 @Getter
 
 public class Prenda {
-    private TipoDePrenda tipo;
+    private TipoPrenda tipo;
     private String material;
     private String color1;
     private String color2;
