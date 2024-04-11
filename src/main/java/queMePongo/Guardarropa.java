@@ -1,11 +1,17 @@
 package queMePongo;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+
 import java.util.List;
+
+@AllArgsConstructor
+@Getter
 
 public class Guardarropa {
 
     private List<Prenda> prendas;
 
-    public void agregarPrenda(TipoPrenda tipo, String material, String color1, String color2){
+    public void agregarPrenda(TipoPrenda tipo, Material material, Color color1, Color color2){
         switch (tipo.categoria){
             case SUPERIOR:
                 prendas.add(new ParteSuperior(tipo,material,color1,color2));
