@@ -9,10 +9,10 @@ import java.util.ArrayList;
 @Getter
 
 public class Atuendo {
-    private ParteSuperior superior;
-    private ParteInferior inferior;
-    private Calzado calzado;
-    private ArrayList<Accesorio> accesorios;
+    private Prenda superior;
+    private Prenda inferior;
+    private Prenda calzado;
+    private ArrayList<Prenda> accesorios;
 
 
 }

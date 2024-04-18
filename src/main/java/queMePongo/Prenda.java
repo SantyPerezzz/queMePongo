@@ -7,17 +7,18 @@ import lombok.Getter;
 public class Prenda {
     private TipoPrenda tipo;
     private Material material;
+    private Trama trama;
     private Color color1;
     private Color color2;
 
-    public Prenda(TipoPrenda tipo,Material material, Color colorPrincipal){
+    public Prenda(TipoPrenda tipo,Material material, Trama trama, Color colorPrincipal){
         this.tipo=tipo;
         this.material=material;
         this.color1=colorPrincipal;
         this.color2 = null;
     }
 
-    public Prenda(TipoPrenda tipo,Material material, Color colorPrincipal, Color colorSecundario){
+    public Prenda(TipoPrenda tipo,Material material, Trama trama, Color colorPrincipal, Color colorSecundario){
         this.tipo=tipo;
         this.material=material;
         this.color1=colorPrincipal;
