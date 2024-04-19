@@ -1,14 +1,9 @@
 package queMePongo;
 
-import com.sun.tools.jdeprscan.scan.Scan;
 import exceptions.PrendaInvalidaException;
-import lombok.Getter;
-import lombok.Setter;
 
 import java.util.Scanner;
 
-@Getter
-@Setter
 
 public class Prenda {
     private TipoPrenda tipo;

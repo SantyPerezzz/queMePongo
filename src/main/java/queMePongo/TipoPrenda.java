@@ -1,10 +1,7 @@
 package queMePongo;
 
-import lombok.Getter;
-
 import java.util.ArrayList;
 
-@Getter
 
 public class TipoPrenda {
     public static TipoPrenda zapatos= new TipoPrenda(Categoria.CALZADO);
