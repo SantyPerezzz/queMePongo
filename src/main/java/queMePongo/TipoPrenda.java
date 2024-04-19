@@ -1,16 +1,20 @@
 package queMePongo;
 
-public enum TipoPrenda {
-    ZAPATOS(Categoria.CALZADO),
-    CAMISA(Categoria.SUPERIOR),
-    PANTALON(Categoria.INFERIOR),
-    SOMBRERO(Categoria.ACCESORIO);
+import lombok.Getter;
+
+import java.util.ArrayList;
+
+@Getter
+
+public class TipoPrenda {
+    public static TipoPrenda zapatos= new TipoPrenda(Categoria.CALZADO);
+    public static TipoPrenda camisa= new TipoPrenda(Categoria.SUPERIOR);
+    public static TipoPrenda pantalon= new TipoPrenda(Categoria.INFERIOR);
+    public static TipoPrenda sombrero= new TipoPrenda(Categoria.ACCESORIO);
 
 
-    final Categoria categoria;
-
-    TipoPrenda(Categoria categoria) {
+    private Categoria categoria;
+    public TipoPrenda(Categoria categoria){
         this.categoria=categoria;
     }
-
 }
