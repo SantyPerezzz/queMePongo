@@ -2,7 +2,6 @@ package queMePongo;
 
 import java.util.ArrayList;
 
-
 public class TipoPrenda {
     public static TipoPrenda zapatos= new TipoPrenda(Categoria.CALZADO);
     public static TipoPrenda camisa= new TipoPrenda(Categoria.SUPERIOR);

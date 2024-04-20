@@ -13,6 +13,8 @@ public class Guardarropa {
         this.prendas= new ArrayList<Prenda>();
         this.borrador= null;
     }
+
+    /*
     public void agregarPrenda(TipoPrenda tipo, Material material,Trama trama, Color color1, Color color2){
         prendas.add(new Prenda(tipo,material,trama,color1,color2));
     }
@@ -59,5 +61,6 @@ public class Guardarropa {
         prendas.add(borrador);
         borrador=null;
     }
+    */
 
 }
