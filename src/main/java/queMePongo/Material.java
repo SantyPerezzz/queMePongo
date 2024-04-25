@@ -1,5 +1,8 @@
 package queMePongo;
 
 public enum Material {
-    JEAN,ALGODON,TELA,CUERO;
+    JEAN,
+    ALGODON,
+    TELA,
+    CUERO;
 }

@@ -1,5 +1,9 @@
 package queMePongo;
 
 public enum Trama {
-    LISA, RAYADA, LUNARES, CUADROS, ESTAMPADO;
+    LISA,
+    RAYADA,
+    LUNARES,
+    CUADROS,
+    ESTAMPADO;
 }

@@ -1,5 +1,7 @@
 package queMePongo;
 
+import exceptions.PrendaInvalidaException;
+
 public class Borrador {
     private TipoPrenda tipo;
     private Material material;
@@ -7,43 +9,42 @@ public class Borrador {
     private Color color1;
     private Color color2;
 
-    public Borrador(){
-        tipo=null;
+    public Borrador(TipoPrenda tipo){
+        this.tipo=tipo;
         material=null;
-        trama=null;
+        trama=Trama.LISA;
         color1=null;
         color2=null;
     }
 
-    public void setTipo(TipoPrenda tipo){
-        this.tipo= tipo;
-    }
-
     public void setMaterial(Material material){
-        if(this.tipo==null){
-            throw new RuntimeException("Debe especificar el tipo de prenda");
-        }
         this.material=material;
     }
 
     public void setTrama(Trama trama){
-        if(this.tipo==null){
-            throw new RuntimeException("Debe especificar el tipo de prenda");
-        }
         this.trama=trama;
     }
 
     public void setColorPrincipal(Color color){
-        if(this.tipo==null){
-            throw new RuntimeException("Debe especificar el tipo de prenda");
-        }
         this.color1=color;
     }
 
     public void setColorSecundario(Color color){
-        if(this.tipo==null){
-            throw new RuntimeException("Debe especificar el tipo de prenda");
-        }
         this.color2=color;
     }
+
+    public Prenda buildPrenda(){
+        if(tipo==null){
+            throw new PrendaInvalidaException("No tiene tipo");
+        }
+        if(material==null){
+            throw new PrendaInvalidaException("No tiene material");
+        }
+        if(color1==null){
+            throw new PrendaInvalidaException("No tiene color principal");
+        }
+
+        return new Prenda(tipo,material,trama,color1,color2);
+    }
+
 }

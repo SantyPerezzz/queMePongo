@@ -13,15 +13,6 @@ public class Prenda {
     private Color color2;
 
     public Prenda(TipoPrenda tipo,Material material, Trama trama, Color colorPrincipal, Color colorSecundario){
-        if(tipo==null){
-            throw new PrendaInvalidaException("No tiene tipo");
-        }
-        if(material==null){
-            throw new PrendaInvalidaException("No tiene material");
-        }
-        if(colorPrincipal==null){
-            throw new PrendaInvalidaException("No tiene color principal");
-        }
         this.tipo=tipo;
         this.material=material;
         this.color1=colorPrincipal;
