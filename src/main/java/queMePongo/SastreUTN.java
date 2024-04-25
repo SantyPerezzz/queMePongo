@@ -7,6 +7,7 @@ public class SastreUTN implements Sastre{
     public Prenda fabricarParteSuperior() {
         Borrador parteSuperior = new Borrador(TipoPrenda.camisa);
         // Arma la prenda con las caracteristicas deseadas
+
         return parteSuperior.buildPrenda();
     }
 
@@ -14,6 +15,7 @@ public class SastreUTN implements Sastre{
     public Prenda fabricarParteInferior() {
         Borrador parteInferior = new Borrador(TipoPrenda.pantalon);
         // Arma la prenda con las caracteristicas deseadas
+
         return parteInferior.buildPrenda();
     }
 
@@ -21,6 +23,7 @@ public class SastreUTN implements Sastre{
     public Prenda fabricarCalzado() {
         Borrador calzado = new Borrador(TipoPrenda.zapatos);
         // Arma la prenda con las caracteristicas deseadas
+
         return calzado.buildPrenda();
     }
 }

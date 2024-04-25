@@ -17,6 +17,10 @@ public class Borrador {
         color2=null;
     }
 
+    public TipoPrenda getTipo(){
+        return tipo;
+    }
+
     public void setMaterial(Material material){
         this.material=material;
     }

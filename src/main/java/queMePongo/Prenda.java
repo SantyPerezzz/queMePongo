@@ -12,6 +12,10 @@ public class Prenda {
     private Color color1;
     private Color color2;
 
+    public TipoPrenda getTipo(){
+        return tipo;
+    }
+
     public Prenda(TipoPrenda tipo,Material material, Trama trama, Color colorPrincipal, Color colorSecundario){
         this.tipo=tipo;
         this.material=material;
