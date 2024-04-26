@@ -1,6 +1,8 @@
 package queMePongo;
 
-public class QueMePongo {
+import queMePongo.dominio.Guardarropa;
+
+public class App {
     public static void Main(String[] args){
         Guardarropa guardarropa= new Guardarropa();
 

@@ -1,4 +1,4 @@
-package queMePongo;
+package queMePongo.dominio;
 
 public enum Categoria {
     SUPERIOR,

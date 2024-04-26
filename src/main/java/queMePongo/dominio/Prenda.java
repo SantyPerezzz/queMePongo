@@ -1,8 +1,4 @@
-package queMePongo;
-
-import exceptions.PrendaInvalidaException;
-
-import java.util.Scanner;
+package queMePongo.dominio;
 
 
 public class Prenda {

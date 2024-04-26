@@ -1,4 +1,8 @@
-package queMePongo;
+package queMePongo.uniformes;
+
+import queMePongo.dominio.Borrador;
+import queMePongo.dominio.Prenda;
+import queMePongo.dominio.TipoPrenda;
 
 public class SastreUTN implements Sastre{
     // Esta clase es un ejemplo de como serian los sastres que implementan la interfaz Sastre

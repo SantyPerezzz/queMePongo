@@ -1,13 +1,12 @@
-package queMePongo;
+package queMePongo.dominio;
 
 import java.util.ArrayList;
-import java.util.Scanner;
 
 
 public class Guardarropa {
 
     private ArrayList<Prenda> prendas;
-    private Prenda borrador;
+    private Borrador borrador;
 
     public Guardarropa(){
         this.prendas= new ArrayList<Prenda>();
@@ -15,14 +14,6 @@ public class Guardarropa {
     }
 
     /*
-    public void agregarPrenda(TipoPrenda tipo, Material material,Trama trama, Color color1, Color color2){
-        prendas.add(new Prenda(tipo,material,trama,color1,color2));
-    }
-
-    public void agregarPrenda(Prenda prenda){
-        prendas.add(prenda);
-    }
-
     public void agregarPrenda(){
         if(borrador==null){
             borrador= new Prenda();
@@ -56,11 +47,14 @@ public class Guardarropa {
             }
         }
     }
-
+*/
     private void guardarPrenda(){
-        prendas.add(borrador);
-        borrador=null;
+        prendas.add(borrador.buildPrenda());
     }
-    */
+
+    private void reiniciarBorrador(){
+        this.borrador=null;
+    }
+
 
 }

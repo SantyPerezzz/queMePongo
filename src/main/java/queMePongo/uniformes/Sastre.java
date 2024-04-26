@@ -1,4 +1,6 @@
-package queMePongo;
+package queMePongo.uniformes;
+
+import queMePongo.dominio.Prenda;
 
 public interface Sastre {
     public Prenda fabricarParteSuperior();

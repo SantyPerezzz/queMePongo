@@ -1,4 +1,4 @@
-package queMePongo;
+package queMePongo.dominio;
 
 public class Color {
     private int red,green,blue;

@@ -1,4 +1,4 @@
-package queMePongo;
+package queMePongo.dominio;
 
 import exceptions.PrendaInvalidaException;
 
@@ -22,6 +22,7 @@ public class Borrador {
     }
 
     public void setMaterial(Material material){
+        if(!tipo.getMaterialesValidos().contains(material)) throw new RuntimeException("Material incompatible con el tipo de prenda");
         this.material=material;
     }
 
