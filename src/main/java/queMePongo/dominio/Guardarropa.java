@@ -16,7 +16,7 @@ public class Guardarropa {
     public Guardarropa(Integer edad){
         this.edadUsuario = edad;
         this.filtrarRopaInformal = false;
-        this.motorSugerencias = new MotorCasual();
+        this.motorSugerencias = MotorCasual.motorCasual;
         this.prendas = new ArrayList<Prenda>();
         this.borrador = null;
     }

@@ -7,11 +7,14 @@ import java.util.List;
 
 public class MotorCasual implements MotorSugerencias{
 
+    public static MotorCasual motorCasual= new MotorCasual();
+
     public MotorCasual(){
     }
 
     public Atuendo generarAtuendo(Prenda prendaPrincipal, List<Prenda> prendas){
-
+        // TODO Implementar algoritmo que genere atuendos a partir de una prenda principal.
+        // Idea: Hacer funciones en las prendas que comparen su compatibilidad con otra prenda
 
         return null;
     }
