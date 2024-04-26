@@ -47,7 +47,7 @@ public class Borrador {
     }
 
     public Prenda buildPrenda(){
-        if(tipo==null){
+        if(tipo == null){
             throw new PrendaInvalidaException("No tiene tipo");
         }
         if(material==null){
@@ -57,7 +57,7 @@ public class Borrador {
             throw new PrendaInvalidaException("No tiene color principal");
         }
 
-        return new Prenda(tipo,material,trama,color1,color2);
+        return new Prenda(tipo, material, trama, color1, color2, formalidad);
     }
 
 }
