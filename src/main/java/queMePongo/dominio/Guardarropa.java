@@ -1,5 +1,6 @@
 package queMePongo.dominio;
 
+import queMePongo.sugerencias.*;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -7,13 +8,17 @@ import java.util.List;
 public class Guardarropa {
 
     private Integer edadUsuario;
+    private Boolean filtrarRopaInformal;
+    private MotorSugerencias motorSugerencias;
     private List<Prenda> prendas;
     private Borrador borrador;
 
     public Guardarropa(Integer edad){
         this.edadUsuario = edad;
-        this.prendas= new ArrayList<Prenda>();
-        this.borrador= null;
+        this.filtrarRopaInformal = false;
+        this.motorSugerencias = new MotorCasual();
+        this.prendas = new ArrayList<Prenda>();
+        this.borrador = null;
     }
 
     private void guardarPrenda(){
@@ -21,6 +26,6 @@ public class Guardarropa {
     }
 
     private void reiniciarBorrador(){
-        this.borrador=null;
+        this.borrador = null;
     }
 }

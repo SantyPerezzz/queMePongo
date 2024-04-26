@@ -5,5 +5,6 @@ import java.util.List;
 
 public interface MotorSugerencias {
 
-    public List<Atuendo> armarAtuendos(List<Prenda> prendas);
+    public Atuendo generarAtuendo(Prenda prendaPrincipal, List<Prenda> prendas);
+    public List<Atuendo> generarAtuendos(List<Prenda> prendas);
 }

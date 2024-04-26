@@ -7,18 +7,24 @@ import java.util.List;
 
 public class MotorCasual implements MotorSugerencias{
 
-    public Atuendo generarAtuendo(List<Prenda> prendas){
-
-
-        return
+    public MotorCasual(){
     }
 
-    public List<Atuendo> armarAtuendos(List<Prenda> prendas){
+    public Atuendo generarAtuendo(Prenda prendaPrincipal, List<Prenda> prendas){
+
+
+        return null;
+    }
+
+    public List<Atuendo> generarAtuendos(List<Prenda> prendas){
         List<Atuendo> atuendos = new ArrayList<>();
-        for(Prenda prenda: prendas){
-
+        Atuendo aux;
+        for(Prenda prenda: prendas) {
+            aux = generarAtuendo(prenda, prendas);
+            if(!atuendos.contains(aux)){
+                atuendos.add(aux);
+            }
         }
-
         return atuendos;
     }
 }
