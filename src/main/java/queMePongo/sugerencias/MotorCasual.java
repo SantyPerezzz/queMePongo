@@ -10,7 +10,6 @@ public class MotorCasual implements MotorSugerencias{
     public List<Atuendo> armarAtuendos(List<Prenda> prendas){
         List<Atuendo> atuendos = new ArrayList<>();
 
-
         return atuendos;
     }
 }

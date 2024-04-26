@@ -7,6 +7,7 @@ public class Prenda {
     private Trama trama;
     private Color color1;
     private Color color2;
+    private Formalidad formalidad;
 
     public TipoPrenda getTipo(){
         return tipo;

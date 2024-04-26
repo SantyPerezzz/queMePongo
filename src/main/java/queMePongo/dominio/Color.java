@@ -1,9 +1,9 @@
 package queMePongo.dominio;
 
 public class Color {
-    private int red,green,blue;
+    private Integer red,green,blue;
 
-    public Color(int r, int g, int b){
+    public Color(Integer r, Integer g, Integer b){
         this.red=r;
         this.green=g;
         this.blue=b;

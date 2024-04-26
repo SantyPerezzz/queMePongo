@@ -1,11 +1,12 @@
 package queMePongo.dominio;
 
 import java.util.ArrayList;
+import java.util.List;
 
 
 public class Guardarropa {
 
-    private ArrayList<Prenda> prendas;
+    private List<Prenda> prendas;
     private Borrador borrador;
 
     public Guardarropa(){
